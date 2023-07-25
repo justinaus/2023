@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends":[
+    "next/core-web-vitals", // next strict.
+    "plugin:prettier/recommended", // https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended"
+  ],
+  "plugins": ["unused-imports"],
+  "rules": {
+    "unused-imports/no-unused-imports": "warn",
+    "import/order": [
+      "warn"
+    ]
+  }
 }
+
+// eslint-config-prettier : 포매팅할때 prettier 사용하게 하기
+// eslint-plugin-prettier : eslint에서 prettier랑 충돌할 규칙 비활성화
