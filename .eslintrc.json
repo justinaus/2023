@@ -10,7 +10,8 @@
     "unused-imports/no-unused-imports": "warn",
     "import/order": [
       "warn"
-    ]
+    ],
+    "@typescript-eslint/no-unused-vars": "warn"
   }
 }
 
